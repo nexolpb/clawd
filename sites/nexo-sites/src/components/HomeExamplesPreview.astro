@@ -1,0 +1,38 @@
+---
+import type { Locale } from '../i18n/locales';
+import { t } from '../i18n';
+
+const { locale } = Astro.props as { locale: Locale };
+const tr = t(locale);
+const cards = tr.examples.cards.slice(0, 3);
+const title = locale === 'es' ? 'Estructuras de ejemplo' : 'Example website structures';
+const subtitle = locale === 'es'
+  ? 'Aunque sean demos, ver ejemplos ayuda a confiar y a imaginar cómo quedaría tu sitio.'
+  : 'Even as demos, examples build trust and help people picture their own site.';
+const ctaLabel = locale === 'es' ? 'Ver más ejemplos' : 'See more examples';
+const ctaHref = locale === 'es' ? '/es/examples/' : '/en/examples/';
+---
+<section class="mx-auto max-w-6xl px-4 py-14">
+  <div class="max-w-2xl">
+    <div class="text-xs uppercase tracking-widest text-[color:var(--muted)]">{locale === 'es' ? 'Ejemplos' : 'Examples'}</div>
+    <h2 class="mt-2 text-3xl font-extrabold">{title}</h2>
+    <p class="mt-3 text-[color:var(--muted)]">{subtitle}</p>
+  </div>
+
+  <div class="mt-8 grid gap-6 md:grid-cols-3">
+    {cards.map((c) => (
+      <article class="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+        <div class="text-xs uppercase tracking-widest text-[color:var(--muted)]">{c.niche}</div>
+        <div class="mt-2 text-lg font-bold">{c.title}</div>
+        <p class="mt-2 text-sm text-[color:var(--muted)]">{c.desc}</p>
+        <div class="mt-5 h-28 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface2)]"></div>
+      </article>
+    ))}
+  </div>
+
+  <div class="mt-8">
+    <a class="inline-flex items-center justify-center rounded-md border border-[color:var(--border)] bg-[color:var(--surface)] px-5 py-3 text-sm font-semibold text-[color:var(--text)] transition hover:border-[color:var(--primary)]" href={ctaHref}>
+      {ctaLabel}
+    </a>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import type { Locale } from '../i18n/locales';
+import { t } from '../i18n';
+
+const { locale } = Astro.props as { locale: Locale };
+const tr = t(locale);
+---
+<section class="mx-auto max-w-6xl px-4 py-14" id="faq">
+  <div class="max-w-2xl">
+    <div class="text-xs uppercase tracking-widest text-[color:var(--muted)]">FAQ</div>
+    <h2 class="mt-2 text-3xl font-extrabold">{tr.faq.title}</h2>
+    <p class="mt-3 text-[color:var(--muted)]">
+      {locale === 'es'
+        ? 'Respuestas rápidas a las dudas más comunes antes de cotizar.'
+        : 'Quick answers to the most common questions before you request a quote.'}
+    </p>
+  </div>
+
+  <div class="mt-8 grid gap-3">
+    {tr.faq.items.map((it) => (
+      <details class="group rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-5">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4">
+          <span class="font-semibold">{it.q}</span>
+          <span class="text-[color:var(--muted)] transition group-open:rotate-45" aria-hidden="true">+</span>
+        </summary>
+        <div class="mt-3 text-sm text-[color:var(--muted)]">{it.a}</div>
+      </details>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,73 @@
+---
+import type { Locale } from '../i18n/locales';
+import { t } from '../i18n';
+import { whatsappLink } from '../utils/whatsapp';
+
+const { locale, compact } = Astro.props as { locale: Locale; compact?: boolean };
+const tr = t(locale);
+const plans = tr.pricing.plans;
+const planCtx = (idx: number) => ({
+  kind: 'pricing' as const,
+  plan: idx === 0 ? 'launch' : idx === 1 ? 'presence' : 'growth'
+});
+---
+<div class={"grid gap-6 md:grid-cols-3 " + (compact ? '' : '')}>
+  {plans.map((p, idx) => (
+    <div class="relative rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+      {p.badge ? (
+        <div class="absolute -top-3 left-6 rounded-full bg-[color:var(--accent)] px-3 py-1 text-xs font-semibold text-[color:var(--bg)]">
+          {p.badge}
+        </div>
+      ) : null}
+      <div class="flex items-baseline justify-between gap-4">
+        <div>
+          <div class="font-[family:var(--font-display)] text-lg font-extrabold">{p.name}</div>
+          <div class="mt-1 text-sm text-[color:var(--muted)]">{p.desc}</div>
+        </div>
+        <div class="tabular text-3xl font-extrabold text-[color:var(--primary)]">{p.price}</div>
+      </div>
+      <ul class="mt-5 space-y-2 text-sm text-[color:var(--muted)]">
+        {p.features.map((f) => (
+          <li class="flex gap-2">
+            <span class="mt-[2px] inline-flex h-5 w-5 items-center justify-center rounded-full bg-[color:var(--surface2)] text-[color:var(--success)]">✓</span>
+            <span>{f}</span>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-4 rounded-xl bg-[color:var(--surface2)] px-4 py-3 text-xs text-[color:var(--muted)]">
+        <span class="font-semibold text-[color:var(--text)]">{locale === 'es' ? 'Ideal para:' : 'Ideal for:'}</span>
+        {' '}
+        <span>
+          {idx === 0
+            ? (locale === 'es' ? 'empezar rápido' : 'getting online fast')
+            : idx === 1
+              ? (locale === 'es' ? 'confianza + SEO básico' : 'trust + basic SEO')
+              : (locale === 'es' ? 'anuncios y crecimiento' : 'ads and growth')}
+        </span>
+        <div class="mt-1">
+          <span class="font-semibold text-[color:var(--text)]">{locale === 'es' ? 'No incluye:' : 'Does not include:'}</span>
+          {' '}
+          <span>
+            {idx === 0
+              ? (locale === 'es' ? 'multi‑página' : 'multi-page')
+              : idx === 1
+                ? (locale === 'es' ? 'landing extra para Ads' : 'extra Ads landing page')
+                : (locale === 'es' ? 'gestión mensual de Ads' : 'monthly Ads management')}
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-6 flex gap-2">
+        <a
+          class="inline-flex flex-1 items-center justify-center rounded-full bg-[color:var(--primary)] px-4 py-2 text-sm font-semibold text-[color:var(--bg)] transition hover:bg-[color:var(--accent)]"
+          href={whatsappLink(locale, planCtx(idx))}
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+        <a class="inline-flex items-center justify-center rounded-full border border-[color:var(--border)] bg-[color:var(--bg)] px-4 py-2 text-sm font-semibold text-[color:var(--text)] transition hover:border-[color:var(--primary)]" href={`/${locale}/contact/`}>{tr.cta.getQuote}</a>
+      </div>
+    </div>
+  ))}
+</div>

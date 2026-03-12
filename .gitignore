@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs / temp
+*.log
+*.tmp
+.tmp/
+tmp/
+
+# Node / JS
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Build outputs
+/dist/
+/out/
+/.astro/
+/.cache/
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+
+# --- Personal assistant memory/context (excluded by recommendation) ---
+/memory/
+/MEMORY.md
+/SOUL.md
+/USER.md
+/CONTACTS.md
+/IDENTITY.md
+/HEARTBEAT.md
+/TOOLS.md
+/AGENTS.md
+
+# Optional: keep local artifacts out of git
+/artifacts/
+/canvas/
+/leads/

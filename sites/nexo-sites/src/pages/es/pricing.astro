@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PricingCards from '../../components/PricingCards.astro';
+import CTA from '../../components/CTA.astro';
+import { t } from '../../i18n';
+
+const locale = 'es' as const;
+const tr = t(locale);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Nexo Sites',
+  areaServed: 'CR',
+  description: tr.meta.pricingDesc,
+};
+---
+<BaseLayout locale={locale} title={tr.meta.pricingTitle} description={tr.meta.pricingDesc} canonicalPath="/es/pricing/" schema={schema} >
+  <Header locale={locale} active="pricing" />
+  <main class="mx-auto max-w-6xl px-4 py-14">
+    <h1 class="text-4xl font-extrabold">{tr.pricing.title}</h1>
+    <p class="mt-3 max-w-2xl text-[color:var(--muted)]">{tr.pricing.subtitle}</p>
+
+    <div class="mt-10">
+      <PricingCards locale={locale} />
+    </div>
+
+    <div class="mt-12 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
+      <h2 class="text-2xl font-extrabold">Después de pagar, esto pasa:</h2>
+      <ol class="mt-4 grid gap-3 text-sm text-[color:var(--muted)] md:grid-cols-3">
+        <li class="rounded-xl bg-[color:var(--surface2)] p-4"><span class="font-semibold text-[color:var(--accent)]">1)</span> Te mando el brief (5 min) + checklist de fotos.</li>
+        <li class="rounded-xl bg-[color:var(--surface2)] p-4"><span class="font-semibold text-[color:var(--accent)]">2)</span> Te presento estructura/copy y hacemos 1 ronda de ajustes.</li>
+        <li class="rounded-xl bg-[color:var(--surface2)] p-4"><span class="font-semibold text-[color:var(--accent)]">3)</span> Publicamos, conectamos GBP y listo: WhatsApp + llamadas.</li>
+      </ol>
+      <div class="mt-4 text-xs text-[color:var(--muted)]">Tip: mientras más rápido tengas fotos/servicios/horarios, más rápido lanzamos.</div>
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+      <h2 class="text-2xl font-extrabold">{tr.pricing.custom.title}</h2>
+      <p class="mt-2 text-[color:var(--muted)]">{tr.pricing.custom.desc}</p>
+    </div>
+  </main>
+
+  <CTA
+    locale={locale}
+    ctx={{ kind: 'pricing' }}
+    title={'¿Quieres lanzar rápido y después escalar con <em>Google Ads</em>?'}
+    subtitle={'Dejemos tu base lista hoy, para que mañana puedas correr campañas con tracking y landing optimizada.'}
+  />
+  <Footer locale={locale} />
+</BaseLayout>

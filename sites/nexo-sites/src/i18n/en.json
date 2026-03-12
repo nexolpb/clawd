@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "homeTitle": "Nexo Sites — Websites that convert",
+    "homeDesc": "Fast websites for local businesses. Connected to Google Business Profile. Ready for WhatsApp and Google Ads. Launched in days.",
+    "pricingTitle": "Pricing — Nexo Sites",
+    "pricingDesc": "Clear plans to launch fast, connect your Google Business Profile, and convert visits into WhatsApp messages and calls.",
+    "examplesTitle": "Examples — Nexo Sites",
+    "examplesDesc": "Representative examples of sites for local businesses: clear, fast, and built to convert.",
+    "processTitle": "Process — Nexo Sites",
+    "processDesc": "A simple, transparent process to launch your website in days—without the drama.",
+    "contactTitle": "Contact — Nexo Sites",
+    "contactDesc": "Tell us about your business. We’ll reply via WhatsApp or email within 2 hours."
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "examples": "Examples",
+    "process": "Process",
+    "contact": "Contact",
+    "lang": "ES"
+  },
+  "cta": {
+    "whatsapp": "Message me on WhatsApp",
+    "bookCall": "Book a call",
+    "seePricing": "See pricing",
+    "seeExamples": "See examples",
+    "getQuote": "Get a quote"
+  },
+  "badges": {
+    "product": "Websites for local businesses",
+    "why": "Why Nexo Sites"
+  },
+  "hero": {
+    "title": "Local business websites that turn visitors into <em>clients</em>",
+    "subtitle": "Fast, mobile‑first websites designed to generate WhatsApp messages and phone calls from Google visitors.",
+    "proof": "Built for calls, messages & local Google searches", 
+    "stats": {
+      "clients": "Sites launched",
+      "speed": "Launch time",
+      "lighthouse": "Lighthouse (target)",
+      "mobile": "Mobile‑optimized"
+    }
+  },
+  "value": {
+    "title": "Built to convert—not just to look nice",
+    "subtitle": "Every UX decision has one goal: get more people to contact you and show up.",
+    "cards": [
+      {
+        "title": "Connected to Google Maps",
+        "desc": "We help you link the site to your Google Business Profile to improve trust and visibility."
+      },
+      {
+        "title": "WhatsApp as the main CTA",
+        "desc": "Visible button, prefilled messages, and clear paths to message you with zero friction."
+      },
+      {
+        "title": "Google Ads ready",
+        "desc": "Structure + tracking so you can run campaigns later without rebuilding the site."
+      },
+      {
+        "title": "Truly mobile‑first",
+        "desc": "Designed for phones first—where most customers come from."
+      },
+      {
+        "title": "Launch in days",
+        "desc": "Simple process, no endless meetings. Live in 5–14 business days."
+      },
+      {
+        "title": "Zero technical headaches",
+        "desc": "We handle hosting, domain, and publishing. You focus on operations."
+      }
+    ]
+  },
+  "niches": {
+    "title": "Works for your industry",
+    "subtitle": "Vets, clinics, lawyers, home services and more. We adapt messaging + CTA to how your customers decide.",
+    "items": [
+      "Veterinary clinics",
+      "Dental clinics",
+      "Law firms",
+      "Medical practices",
+      "Salons & spas",
+      "Home services",
+      "Restaurants",
+      "Gyms",
+      "Academies",
+      "Real estate",
+      "Auto shops",
+      "And more…"
+    ]
+  },
+  "process": {
+    "title": "How we work",
+    "subtitle": "A clear process to launch fast—with one feedback round and no drama.",
+    "steps": [
+      {
+        "title": "5‑minute brief",
+        "desc": "You share services, area, hours, photos and your GBP link (if you have it)."
+      },
+      {
+        "title": "Proposal within 24 hours",
+        "desc": "We recommend the plan, timeline and next steps."
+      },
+      {
+        "title": "Design + copy",
+        "desc": "We build the structure and conversion‑oriented messaging."
+      },
+      {
+        "title": "One revision round",
+        "desc": "We refine what’s needed to match your brand."
+      },
+      {
+        "title": "Launch + GBP connection",
+        "desc": "We publish, connect your site to Google, and set up tracking based on your plan."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Clear pricing—no surprises",
+    "subtitle": "Pick the plan that matches your stage. All include design, publishing and a conversion‑ready foundation.",
+    "plans": [
+      {
+        "name": "Launch",
+        "price": "$349",
+        "desc": "Get online and start receiving messages now.",
+        "badge": "",
+        "features": [
+          "1 page (landing)",
+          "Mobile‑first design",
+          "WhatsApp + form",
+          "Map + click‑to‑call",
+          ".com domain (1 year)",
+          "Delivered in 5 business days"
+        ]
+      },
+      {
+        "name": "Presence",
+        "price": "$649",
+        "desc": "Multi‑page site for trust, basic SEO and clarity.",
+        "badge": "Most popular",
+        "features": [
+          "Up to 5 pages",
+          "Industry‑specific copy",
+          "Gallery / reviews",
+          "Basic SEO (titles, structure)",
+          "Google Analytics 4",
+          "Delivered in 10 business days"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "$999",
+        "desc": "Ads‑ready: tracking, extra landing page and conversion focus.",
+        "badge": "For advertisers",
+        "features": [
+          "Everything in Presence",
+          "Google Ads landing page",
+          "Tag Manager + events",
+          "Speed improvements",
+          "30‑day support",
+          "Delivered in 14 business days"
+        ]
+      }
+    ],
+    "custom": {
+      "title": "Special case?",
+      "desc": "Message me and I’ll send a custom quote based on your industry and goals."
+    }
+  },
+  "examples": {
+    "title": "Examples",
+    "subtitle": "Representative examples. Each industry needs a different approach.",
+    "cards": [
+      {
+        "niche": "Dental clinic",
+        "title": "Sonrisas Escazú",
+        "desc": "WhatsApp CTA, map, social proof and a booking‑friendly structure." 
+      },
+      {
+        "niche": "Veterinary",
+        "title": "VetCare San José",
+        "desc": "Clear services, emergency highlight and quick contact paths." 
+      },
+      {
+        "niche": "Law firm",
+        "title": "Lex & Partners",
+        "desc": "Practice areas, credentials and a focused consultation form." 
+      },
+      {
+        "niche": "Beauty",
+        "title": "Studio Élite",
+        "desc": "Portfolio, prices and WhatsApp contact with prefilled message." 
+      },
+      {
+        "niche": "Home services",
+        "title": "Maestro Hogar",
+        "desc": "Coverage area, fast quote capture and click‑to‑call on mobile." 
+      },
+      {
+        "niche": "Healthcare",
+        "title": "Clínica Vitalis",
+        "desc": "Professional profile, location and direct appointment CTA." 
+      }
+    ],
+    "ctaTitle": "Want something for your <em>industry</em>?",
+    "ctaSubtitle": "Message me and I’ll show relevant references."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "Do I need technical knowledge?",
+        "a": "No. I handle the technical side. You only approve content and design."
+      },
+      {
+        "q": "What if I already have a site?",
+        "a": "We’ll review it. If improving makes sense, we optimize. If replacing is better, we do it—no drama."
+      },
+      {
+        "q": "How fast can you deliver?",
+        "a": "Depending on the plan: 5, 10 or 14 business days (if content arrives on time)."
+      },
+      {
+        "q": "Does it include domain and hosting?",
+        "a": "Yes. We include a .com domain for 1 year and hosting. Renewals stay under your ownership."
+      },
+      {
+        "q": "Can the site be in English?",
+        "a": "Yes. We do ES/EN with a toggle for tourist‑friendly or international businesses."
+      },
+      {
+        "q": "What does “Google Ads ready” mean?",
+        "a": "We set up tracking + structure for campaigns: Tag Manager, events and a dedicated landing page (by plan)."
+      },
+      {
+        "q": "How does payment work?",
+        "a": "50% upfront, 50% on delivery. Payment methods: bank transfer, PayPal, and Sinpe (CR)."
+      },
+      {
+        "q": "What do you need from me to start?",
+        "a": "Photos, services, coverage area, hours and your WhatsApp. If you have a GBP, the link helps."
+      },
+      {
+        "q": "How long does it take to launch a website?",
+        "a": "Most sites go live in 5–14 business days, depending on the plan and how fast content is provided."
+      },
+      {
+        "q": "Do I need to provide photos?",
+        "a": "Photos help a lot, but if you don’t have them we can start with professional stock images and replace them later."
+      },
+      {
+        "q": "Can I update the site later?",
+        "a": "Yes. You can request updates anytime. We can also set up a simple maintenance plan if you want ongoing help."
+      },
+      {
+        "q": "Do you manage Google Ads?",
+        "a": "Ads management isn’t included, but the Growth plan is structured for future campaigns (tracking, events and landing page)."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let’s talk",
+    "subtitle": "Tell me what you do and I’ll recommend the right plan. I reply via WhatsApp or email.",
+    "formTitle": "Tell me about your project",
+    "fields": {
+      "name": "Your name",
+      "business": "Business name",
+      "location": "City / Country",
+      "niche": "Industry",
+      "site": "Current site (optional)",
+      "gbp": "Google Business Profile link (optional)",
+      "contact": "Phone or email",
+      "message": "What do you need?"
+    },
+    "submit": "Send",
+    "privacy": "We never share your information."
+  },
+  "footer": {
+    "tagline": "Websites that turn visitors into clients.",
+    "rights": "All rights reserved.",
+    "privacy": "We never share your information."
+  }
+}

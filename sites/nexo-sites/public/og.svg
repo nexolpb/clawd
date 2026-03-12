@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0c0a"/>
+      <stop offset="1" stop-color="#141511"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g opacity="0.18" stroke="#f0efe8">
+    <path d="M0 80 H1200"/>
+    <path d="M0 160 H1200"/>
+    <path d="M0 240 H1200"/>
+    <path d="M0 320 H1200"/>
+    <path d="M0 400 H1200"/>
+    <path d="M0 480 H1200"/>
+    <path d="M0 560 H1200"/>
+    <path d="M80 0 V630"/>
+    <path d="M160 0 V630"/>
+    <path d="M240 0 V630"/>
+    <path d="M320 0 V630"/>
+    <path d="M400 0 V630"/>
+    <path d="M480 0 V630"/>
+    <path d="M560 0 V630"/>
+    <path d="M640 0 V630"/>
+    <path d="M720 0 V630"/>
+    <path d="M800 0 V630"/>
+    <path d="M880 0 V630"/>
+    <path d="M960 0 V630"/>
+    <path d="M1040 0 V630"/>
+    <path d="M1120 0 V630"/>
+  </g>
+  <g transform="translate(96 96)">
+    <rect x="0" y="0" width="96" height="96" rx="20" fill="#1b1c18" stroke="rgba(240,239,232,0.18)"/>
+    <text x="48" y="64" text-anchor="middle" font-family="Syne, system-ui" font-size="52" font-weight="800" fill="#d2b06a">N</text>
+    <text x="0" y="178" font-family="Syne, system-ui" font-size="56" font-weight="800" fill="#f0efe8">Nexo Sites</text>
+    <text x="0" y="230" font-family="DM Sans, system-ui" font-size="28" fill="rgba(240,239,232,0.75)">Affordable, fast websites for local businesses</text>
+    <text x="0" y="274" font-family="DM Sans, system-ui" font-size="28" fill="rgba(240,239,232,0.75)">WhatsApp-first · GBP-connected · Ads-ready</text>
+    <g transform="translate(0 338)">
+      <rect width="420" height="56" rx="28" fill="#d2b06a"/>
+      <text x="210" y="38" text-anchor="middle" font-family="DM Sans, system-ui" font-size="22" font-weight="700" fill="#0b0c0a">Launch in 5–14 business days</text>
+    </g>
+  </g>
+</svg>

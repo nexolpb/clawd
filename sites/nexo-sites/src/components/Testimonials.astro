@@ -1,0 +1,42 @@
+---
+import type { Locale } from '../i18n/locales';
+
+const { locale } = Astro.props as { locale: Locale };
+const title = locale === 'es' ? 'Prueba social que se siente real' : 'Social proof that feels real';
+const subtitle = locale === 'es'
+  ? 'Si no tienes testimonios aún, empezamos con señales de confianza (GBP, fotos, ubicación, CTA claro) y los vamos incorporando.'
+  : "If you don't have testimonials yet, we start with trust signals (GBP, photos, location, clear CTA) and add them over time.";
+
+const items = locale === 'es'
+  ? [
+      { name: 'Negocio local (ejemplo)', role: 'Servicios', quote: 'El sitio quedó claro y ahora la gente nos escribe directo por WhatsApp. Mucho más fácil.' },
+      { name: 'Cliente (ejemplo)', role: 'Clínica', quote: 'La estructura ayuda a explicar servicios y a generar confianza. Se siente profesional.' },
+      { name: 'Dueño (ejemplo)', role: 'Taller', quote: 'Me gustó que quedó listo para anuncios. Cuando active Google Ads, ya tengo base.' }
+    ]
+  : [
+      { name: 'Local business (example)', role: 'Services', quote: 'The site is clear and people message us on WhatsApp right away. Much easier.' },
+      { name: 'Client (example)', role: 'Clinic', quote: 'The structure builds trust and explains services well. It feels professional.' },
+      { name: 'Owner (example)', role: 'Auto shop', quote: "Loved that it's Ads-ready. When we start Google Ads, the foundation is already done." }
+    ];
+---
+<section class="mx-auto max-w-6xl px-4 py-14">
+  <div class="max-w-2xl">
+    <h2 class="text-3xl font-extrabold">{title}</h2>
+    <p class="mt-3 text-[color:var(--muted)]">{subtitle}</p>
+  </div>
+  <div class="mt-8 grid gap-6 md:grid-cols-3">
+    {items.map((t) => (
+      <figure class="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+        <blockquote class="text-sm text-[color:var(--text)]">“{t.quote}”</blockquote>
+        <figcaption class="mt-4 text-xs text-[color:var(--muted)]">
+          <span class="font-semibold text-[color:var(--text)]">{t.name}</span> · {t.role}
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+  <div class="mt-6 text-xs text-[color:var(--muted)]">
+    {locale === 'es'
+      ? 'Nota: estos son ejemplos de copy. Al trabajar contigo, usamos reseñas reales o las reemplazamos por señales de confianza verificables.'
+      : 'Note: these are placeholder examples. When working with you, we use real reviews or replace them with verifiable trust signals.'}
+  </div>
+</section>

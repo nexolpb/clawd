@@ -1,0 +1,63 @@
+---
+import type { Locale } from '../i18n/locales';
+import { t } from '../i18n';
+import { whatsappLink } from '../utils/whatsapp';
+
+const { locale } = Astro.props as { locale: Locale };
+const tr = t(locale);
+
+const niches = locale === 'es'
+  ? ['Veterinarias', 'Clínicas dentales', 'Abogados', 'Servicios del hogar', 'Belleza', 'Salud']
+  : ['Veterinary', 'Dental', 'Legal', 'Home services', 'Beauty', 'Healthcare'];
+
+const cards = tr.examples.cards;
+---
+<div class="flex flex-wrap gap-2">
+  <button class="filter-btn rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-2 text-sm" data-filter="all">
+    {locale === 'es' ? 'Todos' : 'All'}
+  </button>
+  {niches.map((n) => (
+    <button class="filter-btn rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-2 text-sm" data-filter={n}>
+      {n}
+    </button>
+  ))}
+</div>
+
+<div class="mt-8 grid gap-6 md:grid-cols-3" id="examplesGrid">
+  {cards.map((c) => (
+    <div class="example-card rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6" data-niche={c.niche}>
+      <div class="text-xs uppercase tracking-widest text-[color:var(--muted)]">{c.niche}</div>
+      <div class="mt-2 text-lg font-bold">{c.title}</div>
+      <p class="mt-2 text-sm text-[color:var(--muted)]">{c.desc}</p>
+      <div class="mt-5 h-28 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface2)]"></div>
+      <div class="mt-5">
+        <a class="inline-flex w-full items-center justify-center rounded-full bg-[color:var(--primary)] px-4 py-2 text-sm font-semibold text-[color:var(--bg)]" href={whatsappLink(locale, {kind:'examples', niche: c.niche})} target="_blank" rel="noopener">
+          {locale === 'es' ? 'Pedir uno para mi industria' : 'Get one for my industry'}
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  const buttons = Array.from(document.querySelectorAll('.filter-btn'));
+  const cards = Array.from(document.querySelectorAll('.example-card'));
+
+  function setActive(btn){
+    buttons.forEach(b=>b.classList.remove('border-[color:var(--primary)]','text-[color:var(--accent)]'));
+    btn.classList.add('border-[color:var(--primary)]','text-[color:var(--accent)]');
+  }
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      setActive(btn);
+      const f = btn.getAttribute('data-filter');
+      cards.forEach((c) => {
+        const niche = c.getAttribute('data-niche');
+        const show = f === 'all' || niche === f;
+        c.style.display = show ? '' : 'none';
+      });
+    });
+  });
+  if (buttons[0]) setActive(buttons[0]);
+</script>

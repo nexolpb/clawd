@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "homeTitle": "Nexo Sites — Sitios web que convierten",
+    "homeDesc": "Sitios web rápidos para negocios locales. Conectados a Google Business Profile. Listos para WhatsApp y Google Ads. Lanzamiento en días.",
+    "pricingTitle": "Precios — Nexo Sites",
+    "pricingDesc": "Planes claros para lanzar tu sitio rápido, conectar tu Google Business Profile y convertir visitas en WhatsApp y llamadas.",
+    "examplesTitle": "Ejemplos — Nexo Sites",
+    "examplesDesc": "Ejemplos representativos de sitios para negocios locales: claros, rápidos y listos para convertir.",
+    "processTitle": "Proceso — Nexo Sites",
+    "processDesc": "Un proceso simple y claro para lanzar tu sitio web en días, sin complicaciones.",
+    "contactTitle": "Contacto — Nexo Sites",
+    "contactDesc": "Cuéntanos sobre tu negocio. Te respondemos por WhatsApp o email en menos de 2 horas."
+  },
+  "nav": {
+    "home": "Inicio",
+    "pricing": "Precios",
+    "examples": "Ejemplos",
+    "process": "Proceso",
+    "contact": "Contacto",
+    "lang": "EN"
+  },
+  "cta": {
+    "whatsapp": "Escríbeme por WhatsApp",
+    "bookCall": "Agendar llamada",
+    "seePricing": "Ver precios",
+    "seeExamples": "Ver ejemplos",
+    "getQuote": "Solicitar cotización"
+  },
+  "badges": {
+    "product": "Sitios web para negocios locales",
+    "why": "Por qué Nexo Sites"
+  },
+  "hero": {
+    "title": "Sitios web para negocios locales que convierten visitas en <em>clientes</em>",
+    "subtitle": "Sitios rápidos, mobile‑first, diseñados para generar mensajes por WhatsApp y llamadas desde visitas de Google.",
+    "proof": "Hecho para llamadas, mensajes y búsquedas locales", 
+    "stats": {
+      "clients": "Negocios lanzados",
+      "speed": "Tiempo de lanzamiento",
+      "lighthouse": "Lighthouse (objetivo)",
+      "mobile": "Optimizado para móvil"
+    }
+  },
+  "value": {
+    "title": "Construido para convertir, no para verse “bonito”",
+    "subtitle": "Cada decisión de UX tiene un objetivo: que más clientes te contacten y lleguen a tu negocio.",
+    "cards": [
+      {
+        "title": "Conectado a Google Maps",
+        "desc": "Te ayudamos a enlazar el sitio a tu Google Business Profile para mejorar confianza y visibilidad."
+      },
+      {
+        "title": "WhatsApp como CTA principal",
+        "desc": "Botón visible, mensajes prellenados y rutas claras para que te escriban sin fricción."
+      },
+      {
+        "title": "Listo para Google Ads",
+        "desc": "Estructura y tracking para que luego puedas correr campañas sin rehacer la web."
+      },
+      {
+        "title": "Mobile‑first de verdad",
+        "desc": "Diseñado primero para celular, donde llega la mayoría de tus clientes."
+      },
+      {
+        "title": "Lanzamiento en días",
+        "desc": "Proceso simple, sin reuniones eternas. Tu sitio en vivo en 5–14 días hábiles."
+      },
+      {
+        "title": "Cero dolores técnicos",
+        "desc": "Nos encargamos de hosting, dominio y publicación. Tú te enfocas en operar."
+      }
+    ]
+  },
+  "niches": {
+    "title": "Funciona para tu industria",
+    "subtitle": "Vets, clínicas, abogados, servicios para el hogar y más. Ajustamos el mensaje y el CTA según cómo decide tu cliente.",
+    "items": [
+      "Veterinarias",
+      "Clínicas dentales",
+      "Abogados",
+      "Consultorios",
+      "Salones y spas",
+      "Servicios del hogar",
+      "Restaurantes",
+      "Gimnasios",
+      "Academias",
+      "Bienes raíces",
+      "Talleres",
+      "Y más…"
+    ]
+  },
+  "process": {
+    "title": "Así trabajamos",
+    "subtitle": "Un proceso claro para lanzar rápido, con una ronda de feedback y sin drama.",
+    "steps": [
+      {
+        "title": "Brief de 5 minutos",
+        "desc": "Nos compartes servicios, zona, horarios, fotos y el link de tu GBP (si lo tienes)."
+      },
+      {
+        "title": "Propuesta en menos de 24 horas",
+        "desc": "Te recomendamos el plan, tiempos y próximos pasos."
+      },
+      {
+        "title": "Diseño + contenido",
+        "desc": "Armamos la estructura y copy orientado a conversiones."
+      },
+      {
+        "title": "Una ronda de ajustes",
+        "desc": "Refinamos lo necesario para que quede alineado a tu marca."
+      },
+      {
+        "title": "Lanzamiento + conexión a GBP",
+        "desc": "Publicamos, conectamos tu sitio a Google y dejamos tracking listo según el plan."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios claros, sin sorpresas",
+    "subtitle": "Elige el plan que mejor se adapta a tu etapa. Todos incluyen diseño, publicación y base lista para convertir.",
+    "plans": [
+      {
+        "name": "Lanzamiento",
+        "price": "$349",
+        "desc": "Para tener presencia y empezar a recibir mensajes ya.",
+        "badge": "",
+        "features": [
+          "1 página (landing)",
+          "Diseño mobile‑first",
+          "WhatsApp + formulario",
+          "Mapa + botón de llamada",
+          "Dominio .com (1 año)",
+          "Entrega en 5 días hábiles"
+        ]
+      },
+      {
+        "name": "Presencia",
+        "price": "$649",
+        "desc": "Multi‑página para confianza, SEO básico y más claridad.",
+        "badge": "Más popular",
+        "features": [
+          "Hasta 5 páginas",
+          "Copy optimizado por industria",
+          "Galería / reseñas",
+          "SEO básico (títulos, estructura)",
+          "Google Analytics 4",
+          "Entrega en 10 días hábiles"
+        ]
+      },
+      {
+        "name": "Crecimiento",
+        "price": "$999",
+        "desc": "Listo para Ads: tracking, landing extra y enfoque de conversión.",
+        "badge": "Para anunciantes",
+        "features": [
+          "Todo lo del plan Presencia",
+          "Landing para Google Ads",
+          "Tag Manager + eventos",
+          "Mejoras de velocidad",
+          "Soporte 30 días",
+          "Entrega en 14 días hábiles"
+        ]
+      }
+    ],
+    "custom": {
+      "title": "¿Caso especial?",
+      "desc": "Escríbeme y te paso una cotización personalizada según tu industria y objetivos."
+    }
+  },
+  "examples": {
+    "title": "Ejemplos",
+    "subtitle": "Ejemplos representativos. Cada industria requiere un enfoque distinto.",
+    "cards": [
+      {
+        "niche": "Clínica dental",
+        "title": "Sonrisas Escazú",
+        "desc": "CTA a WhatsApp, mapa, pruebas sociales y estructura para agendar." 
+      },
+      {
+        "niche": "Veterinaria",
+        "title": "VetCare San José",
+        "desc": "Servicios claros, emergencias destacadas y rutas rápidas a contacto." 
+      },
+      {
+        "niche": "Bufete",
+        "title": "Lex & Partners",
+        "desc": "Áreas de práctica, credenciales y formulario de consulta enfocado." 
+      },
+      {
+        "niche": "Belleza",
+        "title": "Studio Élite",
+        "desc": "Portafolio, precios y contacto por WhatsApp con mensaje prellenado." 
+      },
+      {
+        "niche": "Hogar",
+        "title": "Maestro Hogar",
+        "desc": "Zonas de cobertura, cotización rápida y llamadas desde móvil." 
+      },
+      {
+        "niche": "Salud",
+        "title": "Clínica Vitalis",
+        "desc": "Perfil profesional, ubicación y CTA directo para citas." 
+      }
+    ],
+    "ctaTitle": "¿Quieres ver algo para tu <em>industria</em>?",
+    "ctaSubtitle": "Escríbeme y te enseño referencias relevantes."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Necesito conocimientos técnicos?",
+        "a": "No. Yo me encargo de lo técnico. Tú solo apruebas contenido y diseño."
+      },
+      {
+        "q": "¿Qué pasa si ya tengo sitio?",
+        "a": "Lo revisamos. Si conviene mejorar, lo optimizamos. Si conviene reemplazar, lo hacemos sin drama."
+      },
+      {
+        "q": "¿En cuánto tiempo está listo?",
+        "a": "Dependiendo del plan: 5, 10 o 14 días hábiles (si entregas contenido a tiempo)."
+      },
+      {
+        "q": "¿Incluye dominio y hosting?",
+        "a": "Sí. Incluimos dominio .com por 1 año y hosting. Renovaciones posteriores son a tu nombre."
+      },
+      {
+        "q": "¿Puedo tener el sitio en inglés?",
+        "a": "Sí. Trabajamos ES/EN con toggle para negocios que atienden turistas o clientes internacionales."
+      },
+      {
+        "q": "¿Qué significa “listo para Google Ads”?",
+        "a": "Que dejamos tracking y estructura para campañas: Tag Manager, eventos y una landing dedicada (según plan)."
+      },
+      {
+        "q": "¿Cómo es el pago?",
+        "a": "50% al iniciar, 50% al entregar. Métodos: transferencia, PayPal y Sinpe (CR)."
+      },
+      {
+        "q": "¿Qué necesitas de mí para empezar?",
+        "a": "Fotos, servicios, zona, horarios y tu WhatsApp. Si tienes GBP, también el enlace."
+      },
+      {
+        "q": "¿Cuánto tarda en lanzarse un sitio web?",
+        "a": "La mayoría queda en vivo en 5–14 días hábiles, según el plan y qué tan rápido llegue el contenido."
+      },
+      {
+        "q": "¿Tengo que aportar fotos?",
+        "a": "Ayudan mucho, pero si no tienes, podemos empezar con imágenes profesionales de stock y luego reemplazarlas."
+      },
+      {
+        "q": "¿Puedo actualizar el sitio después?",
+        "a": "Sí. Puedes pedir cambios cuando quieras. También podemos armar un plan de mantenimiento si quieres apoyo continuo."
+      },
+      {
+        "q": "¿Manejas Google Ads?",
+        "a": "La gestión de Ads no está incluida, pero el plan Crecimiento deja el sitio preparado para campañas (tracking, eventos y landing)."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hablemos de tu negocio",
+    "subtitle": "Cuéntame qué haces y te digo qué plan conviene. Respondo por WhatsApp o email.",
+    "formTitle": "Cuéntame sobre tu proyecto",
+    "fields": {
+      "name": "Tu nombre",
+      "business": "Nombre del negocio",
+      "location": "Ciudad / País",
+      "niche": "Industria",
+      "site": "Sitio actual (opcional)",
+      "gbp": "Link de Google Business Profile (opcional)",
+      "contact": "Teléfono o email",
+      "message": "¿Qué necesitas?"
+    },
+    "submit": "Enviar",
+    "privacy": "No compartimos tu información con nadie."
+  },
+  "footer": {
+    "tagline": "Sitios web que convierten visitas en clientes.",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "No compartimos tu información con nadie."
+  }
+}

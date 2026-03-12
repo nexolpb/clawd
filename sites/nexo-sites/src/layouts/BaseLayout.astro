@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+import { SITE } from '../config/site';
+
+type Props = {
+  locale: 'es' | 'en';
+  title: string;
+  description: string;
+  canonicalPath: string;
+  schema?: any;
+};
+
+const { locale, title, description, canonicalPath, schema } = Astro.props;
+const canonical = new URL(canonicalPath, SITE.baseUrl).toString();
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${SITE.baseUrl}/og.svg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --font-display: 'Syne', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        --font-body: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      }
+      body { font-family: var(--font-body); }
+      h1,h2,h3,h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+      .text-balance { text-wrap: balance; }
+      .prose-em em { font-style: normal; color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <slot />
+
+    {schema ? (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ) : null}
+
+    <script>
+      // Persist locale selection
+      (function(){
+        try {
+          const stored = localStorage.getItem('nexo_sites_locale');
+          if (stored && (stored === 'es' || stored === 'en')) {
+            const path = window.location.pathname;
+            // Only redirect when user hits root or wrong locale root
+            if (path === '/' || path === '/index.html') {
+              window.location.replace('/' + stored + '/');
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PricingCards from '../../components/PricingCards.astro';
+import CTA from '../../components/CTA.astro';
+import { t } from '../../i18n';
+
+const locale = 'en' as const;
+const tr = t(locale);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Nexo Sites',
+  areaServed: 'CR',
+  description: tr.meta.pricingDesc,
+};
+---
+<BaseLayout locale={locale} title={tr.meta.pricingTitle} description={tr.meta.pricingDesc} canonicalPath="/en/pricing/" schema={schema} >
+  <Header locale={locale} active="pricing" />
+  <main class="mx-auto max-w-6xl px-4 py-14">
+    <h1 class="text-4xl font-extrabold">{tr.pricing.title}</h1>
+    <p class="mt-3 max-w-2xl text-[color:var(--muted)]">{tr.pricing.subtitle}</p>
+
+    <div class="mt-10">
+      <PricingCards locale={locale} />
+    </div>
+
+    <div class="mt-12 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
+      <h2 class="text-2xl font-extrabold">After you pay, here’s what happens:</h2>
+      <ol class="mt-4 grid gap-3 text-sm text-[color:var(--muted)] md:grid-cols-3">
+        <li class="rounded-xl bg-[color:var(--surface2)] p-4"><span class="font-semibold text-[color:var(--accent)]">1)</span> We send a 5‑minute brief + photo checklist.</li>
+        <li class="rounded-xl bg-[color:var(--surface2)] p-4"><span class="font-semibold text-[color:var(--accent)]">2)</span> We propose structure/copy and do 1 revision round.</li>
+        <li class="rounded-xl bg-[color:var(--surface2)] p-4"><span class="font-semibold text-[color:var(--accent)]">3)</span> We publish, connect GBP, and you’re ready for WhatsApp + calls.</li>
+      </ol>
+      <div class="mt-4 text-xs text-[color:var(--muted)]">Tip: faster photos/services/hours = faster launch.</div>
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+      <h2 class="text-2xl font-extrabold">{tr.pricing.custom.title}</h2>
+      <p class="mt-2 text-[color:var(--muted)]">{tr.pricing.custom.desc}</p>
+    </div>
+  </main>
+
+  <CTA
+    locale={locale}
+    ctx={{ kind: 'pricing' }}
+    title={'Launch fast, then scale with <em>Google Ads</em>'}
+    subtitle={'Let’s build the conversion-ready foundation now, so you can run campaigns later without rebuilding.'}
+  />
+  <Footer locale={locale} />
+</BaseLayout>
