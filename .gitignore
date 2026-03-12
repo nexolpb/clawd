@@ -44,3 +44,9 @@ node_modules/
 /artifacts/
 /canvas/
 /leads/
+
+# Local one-off files at repo root
+/leads_masterplan_*.csv
+/nexo-digital-ops_v*.html
+/package.json
+/package-lock.json
