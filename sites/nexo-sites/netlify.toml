@@ -1,5 +1,8 @@
 [build]
   publish = "dist"
+  # Skip build if nothing changed inside the base directory.
+  # This is ideal for monorepos (changes outside /sites/nexo-sites won't consume deploy credits).
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
 
 [[edge_functions]]
   function = "redirect-locale"
