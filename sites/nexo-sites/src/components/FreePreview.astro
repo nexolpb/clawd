@@ -1,0 +1,55 @@
+---
+import type { Locale } from '../i18n/locales';
+import { t } from '../i18n';
+import { whatsappLink } from '../utils/whatsapp';
+
+const { locale } = Astro.props as { locale: Locale };
+const tr = t(locale);
+const whatsappHref = whatsappLink(locale, { kind: 'preview' });
+---
+
+<section class="mx-auto max-w-6xl px-4 py-14">
+  <div class="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
+    <div class="grid gap-8 md:grid-cols-2 md:items-center">
+      <div>
+        <h2 class="text-3xl font-extrabold">{tr.preview.title}</h2>
+        <p class="mt-3 text-[color:var(--muted)]">{tr.preview.subtitle}</p>
+        <p class="mt-3 text-[color:var(--muted)]">{tr.preview.noCommitment}</p>
+
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a
+            class="inline-flex items-center justify-center rounded-md bg-[color:var(--primary)] px-5 py-3 text-sm font-semibold text-[color:var(--bg)] transition hover:bg-[color:var(--accent)]"
+            href={`/${locale}/contact/`}
+          >
+            {tr.preview.primaryCta}
+          </a>
+          <a
+            class="inline-flex items-center justify-center rounded-md border border-[color:var(--border)] bg-[color:var(--bg)] px-5 py-3 text-sm font-semibold text-[color:var(--text)] transition hover:border-[color:var(--primary)]"
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener"
+          >
+            {tr.preview.secondaryCta}
+          </a>
+        </div>
+
+        {tr.preview.trustLine ? (
+          <div class="mt-4 text-xs text-[color:var(--muted)]">{tr.preview.trustLine}</div>
+        ) : null}
+      </div>
+
+      <div class="rounded-2xl bg-[color:var(--surface2)] p-6">
+        <div class="text-sm font-semibold">{tr.preview.whatYouGetTitle}</div>
+        <ul class="mt-4 grid gap-2 text-sm text-[color:var(--muted)]">
+          {tr.preview.whatYouGet.map((item) => (
+            <li class="flex gap-2">
+              <span class="text-[color:var(--success)]">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="mt-4 text-xs text-[color:var(--muted)]">{tr.preview.delivery}</div>
+      </div>
+    </div>
+  </div>
+</section>

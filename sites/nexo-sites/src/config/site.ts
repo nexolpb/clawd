@@ -11,10 +11,10 @@ export const SITE = {
   },
   // Calendly is optional. If you don’t want to use it yet, keep this as a placeholder.
   // The CTA component will fall back to the Contact page when it detects the placeholder.
-  calendlyUrl: 'https://calendly.com/your-link',
+  calendlyUrl: 'https://calendly.com/hello_nexodigitalops',
   email: 'hola@nexodigitalops.com',
   minResponseTime: {
-    es: 'Respondemos en menos de 2 horas',
+    es: 'Respondemos en menos de 2 horas por WhatsApp',
     en: 'We respond in under 2 hours',
   },
 } as const;

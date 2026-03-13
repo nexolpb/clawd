@@ -115,6 +115,22 @@
       }
     ]
   },
+  "preview": {
+    "title": "Get a free website preview for your business",
+    "subtitle": "Send us your business name and we’ll show you what your website could look like — including structure, messaging, and contact flow.",
+    "noCommitment": "No commitment required.",
+    "whatYouGetTitle": "What you’ll receive",
+    "whatYouGet": [
+      "Example layout for your business",
+      "Suggested structure for your services",
+      "WhatsApp contact flow",
+      "Ideas to improve your visibility on Google"
+    ],
+    "delivery": "Delivered in 24–48 hours.",
+    "primaryCta": "Request my preview",
+    "secondaryCta": "Message me on WhatsApp",
+    "trustLine": "Already helped 40+ businesses launch their websites."
+  },
   "pricing": {
     "title": "Clear pricing—no surprises",
     "subtitle": "Pick the plan that matches your stage. All include design, publishing and a conversion‑ready foundation.",

@@ -5,6 +5,7 @@ export type WhatsAppContext =
   | { kind: 'generic' }
   | { kind: 'pricing'; plan?: 'launch' | 'presence' | 'growth' }
   | { kind: 'examples'; niche?: string }
+  | { kind: 'preview' }
   | { kind: 'contact' };
 
 export function whatsappLink(locale: Locale, ctx: WhatsAppContext = { kind: 'generic' }) {
@@ -18,6 +19,7 @@ export function whatsappLink(locale: Locale, ctx: WhatsAppContext = { kind: 'gen
       else msg = 'Hola, quiero elegir un plan para mi negocio. ¿Me ayudas?';
     }
     if (ctx.kind === 'examples' && ctx.niche) msg = `Hola, ¿tienes ejemplos para ${ctx.niche}?`;
+    if (ctx.kind === 'preview') msg = 'Hola, quiero una vista previa gratuita de mi sitio web. Mi negocio es: '; 
     if (ctx.kind === 'contact') msg = 'Hola, quiero cotizar un sitio. Te comparto los datos por aquí.';
   } else {
     if (ctx.kind === 'pricing') {
@@ -27,6 +29,7 @@ export function whatsappLink(locale: Locale, ctx: WhatsAppContext = { kind: 'gen
       else msg = 'Hi, I want help choosing the right plan.';
     }
     if (ctx.kind === 'examples' && ctx.niche) msg = `Hi, do you have examples for ${ctx.niche}?`;
+    if (ctx.kind === 'preview') msg = 'Hi, I want a free website preview. My business name is: ';
     if (ctx.kind === 'contact') msg = 'Hi, I want a quote for a website. I can share details here.';
   }
 

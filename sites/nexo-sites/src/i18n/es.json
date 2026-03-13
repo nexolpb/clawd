@@ -31,9 +31,9 @@
     "why": "Por qué Nexo Sites"
   },
   "hero": {
-    "title": "Sitios web para negocios locales que convierten visitas en <em>clientes</em>",
-    "subtitle": "Sitios rápidos, mobile‑first, diseñados para generar mensajes por WhatsApp y llamadas desde visitas de Google.",
-    "proof": "Hecho para llamadas, mensajes y búsquedas locales", 
+    "title": "Tu negocio merece un sitio web que realmente genere clientes",
+    "subtitle": "Creamos sitios web claros, rápidos y optimizados para convertir visitas en mensajes de WhatsApp y llamadas de clientes.",
+    "proof": "", 
     "stats": {
       "clients": "Negocios lanzados",
       "speed": "Tiempo de lanzamiento",
@@ -42,8 +42,8 @@
     }
   },
   "value": {
-    "title": "Construido para convertir, no para verse “bonito”",
-    "subtitle": "Cada decisión de UX tiene un objetivo: que más clientes te contacten y lleguen a tu negocio.",
+    "title": "Diseñado para generar clientes — no solo para verse bien",
+    "subtitle": "La mayoría de los sitios web se ven bien, pero no generan contactos. En Nexo Sites cada decisión de diseño tiene un objetivo claro: que más personas contacten tu negocio.",
     "cards": [
       {
         "title": "Conectado a Google Maps",
@@ -72,92 +72,108 @@
     ]
   },
   "niches": {
-    "title": "Funciona para tu industria",
-    "subtitle": "Vets, clínicas, abogados, servicios para el hogar y más. Ajustamos el mensaje y el CTA según cómo decide tu cliente.",
+    "title": "Ideal para distintos tipos de negocios",
+    "subtitle": "Adaptamos la estructura del sitio y los mensajes según cómo toman decisiones los clientes en cada tipo de negocio.",
     "items": [
-      "Veterinarias",
+      "Clínicas veterinarias",
       "Clínicas dentales",
-      "Abogados",
-      "Consultorios",
+      "Bufetes legales",
+      "Consultorios médicos",
       "Salones y spas",
-      "Servicios del hogar",
+      "Servicios para el hogar",
       "Restaurantes",
       "Gimnasios",
       "Academias",
       "Bienes raíces",
-      "Talleres",
-      "Y más…"
+      "Talleres automotrices",
+      "Y más"
     ]
   },
   "process": {
-    "title": "Así trabajamos",
-    "subtitle": "Un proceso claro para lanzar rápido, con una ronda de feedback y sin drama.",
+    "title": "Cómo trabajamos",
+    "subtitle": "Un proceso claro para lanzar tu sitio rápido y sin complicaciones.",
     "steps": [
       {
-        "title": "Brief de 5 minutos",
-        "desc": "Nos compartes servicios, zona, horarios, fotos y el link de tu GBP (si lo tienes)."
+        "title": "Formulario rápido de 5 minutos",
+        "desc": "Nos compartes servicios, zona de atención, horarios, fotos y link de Google Business (si lo tienes)."
       },
       {
         "title": "Propuesta en menos de 24 horas",
-        "desc": "Te recomendamos el plan, tiempos y próximos pasos."
+        "desc": "Te recomendamos el plan ideal, el tiempo estimado y los siguientes pasos."
       },
       {
-        "title": "Diseño + contenido",
-        "desc": "Armamos la estructura y copy orientado a conversiones."
+        "title": "Diseño y redacción del sitio",
+        "desc": "Creamos la estructura del sitio y los textos enfocados en generar contactos."
       },
       {
         "title": "Una ronda de ajustes",
-        "desc": "Refinamos lo necesario para que quede alineado a tu marca."
+        "desc": "Hacemos los ajustes necesarios para que el sitio refleje tu marca."
       },
       {
-        "title": "Lanzamiento + conexión a GBP",
-        "desc": "Publicamos, conectamos tu sitio a Google y dejamos tracking listo según el plan."
+        "title": "Publicación y conexión con Google",
+        "desc": "Publicamos tu sitio web, lo conectamos con Google y configuramos el seguimiento según el plan elegido."
       }
     ]
   },
+  "preview": {
+    "title": "Recibe una vista previa gratuita de tu sitio web",
+    "subtitle": "Envíanos el nombre de tu negocio y te mostraremos cómo podría verse tu sitio web, incluyendo estructura, mensajes y flujo de contacto.",
+    "noCommitment": "Sin compromiso.",
+    "whatYouGetTitle": "Qué recibirás",
+    "whatYouGet": [
+      "Ejemplo de diseño para tu negocio",
+      "Estructura sugerida para tus servicios",
+      "Flujo de contacto por WhatsApp",
+      "Ideas para mejorar tu visibilidad en Google"
+    ],
+    "delivery": "Entregado en 24–48 horas.",
+    "primaryCta": "Solicitar vista previa",
+    "secondaryCta": "Escribirme por WhatsApp",
+    "trustLine": "Ya hemos ayudado a más de 40 negocios a lanzar su sitio web."
+  },
   "pricing": {
-    "title": "Precios claros, sin sorpresas",
+    "title": "Precios claros — sin sorpresas",
     "subtitle": "Elige el plan que mejor se adapta a tu etapa. Todos incluyen diseño, publicación y base lista para convertir.",
     "plans": [
       {
-        "name": "Lanzamiento",
+        "name": "Launch",
         "price": "$349",
-        "desc": "Para tener presencia y empezar a recibir mensajes ya.",
+        "desc": "Ideal para: tener presencia en línea rápidamente",
         "badge": "",
         "features": [
           "1 página (landing)",
-          "Diseño mobile‑first",
-          "WhatsApp + formulario",
+          "Diseño optimizado para celulares",
+          "Botón de WhatsApp + formulario",
           "Mapa + botón de llamada",
           "Dominio .com (1 año)",
           "Entrega en 5 días hábiles"
         ]
       },
       {
-        "name": "Presencia",
+        "name": "Presence",
         "price": "$649",
-        "desc": "Multi‑página para confianza, SEO básico y más claridad.",
+        "desc": "Ideal para: generar confianza y mejorar tu presencia en Google",
         "badge": "Más popular",
         "features": [
           "Hasta 5 páginas",
-          "Copy optimizado por industria",
+          "Textos adaptados a tu tipo de negocio",
           "Galería / reseñas",
-          "SEO básico (títulos, estructura)",
+          "SEO básico (títulos y estructura)",
           "Google Analytics 4",
           "Entrega en 10 días hábiles"
         ]
       },
       {
-        "name": "Crecimiento",
+        "name": "Growth",
         "price": "$999",
-        "desc": "Listo para Ads: tracking, landing extra y enfoque de conversión.",
-        "badge": "Para anunciantes",
+        "desc": "Ideal para: negocios que quieren crecer con publicidad",
+        "badge": "",
         "features": [
-          "Todo lo del plan Presencia",
-          "Landing para Google Ads",
-          "Tag Manager + eventos",
-          "Mejoras de velocidad",
-          "Soporte 30 días",
+          "Incluye todo lo del plan Presence",
+          "Landing adicional para Google Ads",
+          "Tag Manager + eventos de seguimiento",
+          "Optimización de velocidad",
+          "30 días de soporte",
           "Entrega en 14 días hábiles"
         ]
       }

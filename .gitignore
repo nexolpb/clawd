@@ -44,6 +44,7 @@ node_modules/
 /artifacts/
 /canvas/
 /leads/
+/sites_leads/
 
 # Local one-off files at repo root
 /leads_masterplan_*.csv

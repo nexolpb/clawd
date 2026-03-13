@@ -9,6 +9,7 @@ import StickyWhatsApp from '../../components/StickyWhatsApp.astro';
 import TrustStrip from '../../components/TrustStrip.astro';
 import HomeExamplesPreview from '../../components/HomeExamplesPreview.astro';
 import FAQ from '../../components/FAQ.astro';
+import FreePreview from '../../components/FreePreview.astro';
 import { t } from '../../i18n';
 import { SITE } from '../../config/site';
 import { whatsappLink } from '../../utils/whatsapp';
@@ -35,9 +36,9 @@ const whatsappHref = whatsappLink(locale, { kind: 'generic' });
             <p class="mt-4 text-[color:var(--muted)]">{tr.hero.subtitle}</p>
 
             <ul class="mt-5 grid gap-2 text-sm text-[color:var(--muted)]">
-              <li class="flex gap-2"><span class="text-[color:var(--success)]">✓</span><span>WhatsApp + llamadas en 1 click</span></li>
-              <li class="flex gap-2"><span class="text-[color:var(--success)]">✓</span><span>Conectado a Google Maps (GBP)</span></li>
-              <li class="flex gap-2"><span class="text-[color:var(--success)]">✓</span><span>Listo en 5–14 días hábiles</span></li>
+              <li class="flex gap-2"><span class="text-[color:var(--success)]">✓</span><span>WhatsApp y llamadas con un solo clic</span></li>
+              <li class="flex gap-2"><span class="text-[color:var(--success)]">✓</span><span>Conectado con tu ubicación en Google Maps</span></li>
+              <li class="flex gap-2"><span class="text-[color:var(--success)]">✓</span><span>Tu sitio web listo en 5–14 días hábiles</span></li>
             </ul>
 
             <div class="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -45,7 +46,9 @@ const whatsappHref = whatsappLink(locale, { kind: 'generic' });
               <a class="inline-flex items-center justify-center rounded-md border border-[color:var(--border)] bg-[color:var(--surface)] px-5 py-3 text-sm font-semibold text-[color:var(--text)] transition hover:border-[color:var(--primary)]" href="/es/pricing/">{tr.cta.seePricing}</a>
             </div>
 
-            <div class="mt-4 text-xs text-[color:var(--muted)]">{SITE.minResponseTime[locale]} · {tr.hero.proof}</div>
+            <div class="mt-4 text-xs text-[color:var(--muted)]">
+              {SITE.minResponseTime[locale]}{tr.hero.proof ? ` · ${tr.hero.proof}` : ''}
+            </div>
           </div>
 
           <div class="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
@@ -277,6 +280,8 @@ const whatsappHref = whatsappLink(locale, { kind: 'generic' });
 
     <Testimonials locale={locale} />
 
+    <FreePreview locale={locale} />
+
     <!-- PRICING -->
     <section class="mx-auto max-w-6xl px-4 py-14" id="pricing">
       <h2 class="text-3xl font-extrabold">{tr.pricing.title}</h2>
@@ -295,6 +300,13 @@ const whatsappHref = whatsappLink(locale, { kind: 'generic' });
         </ul>
       </div>
     </section>
+
+    <CTA
+      locale={locale}
+      ctx={{ kind: 'generic' }}
+      title={'¿Quieres lanzar en <em>5–14 días</em>?'}
+      subtitle={'Escríbeme por WhatsApp y te confirmo el mejor plan y el timeline para tu negocio.'}
+    />
 
     <FAQ locale={locale} />
 
