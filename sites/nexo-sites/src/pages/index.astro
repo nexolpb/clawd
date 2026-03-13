@@ -1,21 +1,19 @@
 ---
-// Root: redirect to ES by default.
+// Root is handled by a Netlify Edge Function (Accept-Language → /es/ or /en/).
+// This page is a no-JS fallback only.
 ---
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=/es/" />
-    <link rel="canonical" href="/es/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexo Sites</title>
+    <meta name="robots" content="noindex" />
   </head>
-  <body>
-    <a href="/es/">Go to site</a>
-    <script>
-      try {
-        const stored = localStorage.getItem('nexo_sites_locale');
-        if (stored === 'en') window.location.replace('/en/');
-        else window.location.replace('/es/');
-      } catch(e) {
-        window.location.replace('/es/');
-      }
-    </script>
+  <body style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; padding: 24px;">
+    <noscript>
+      <p>Select your language:</p>
+      <p><a href="/es/">Español</a> · <a href="/en/">English</a></p>
+    </noscript>
+    <p style="color:#666;">Redirecting…</p>
   </body>
 </html>
