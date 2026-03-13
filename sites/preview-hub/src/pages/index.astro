@@ -1,0 +1,58 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const previewsDir = path.join(process.cwd(), 'public', 'p');
+let slugs: string[] = [];
+try {
+  slugs = fs
+    .readdirSync(previewsDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => d.name)
+    .sort();
+} catch {
+  slugs = [];
+}
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexo Sites — Preview Hub</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      :root { color-scheme: dark; }
+      body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#0b0b0b; color:#f0efe8; }
+      a { color:#7dd3fc; }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px; }
+      .card { border:1px solid rgba(240,239,232,0.14); background: rgba(240,239,232,0.04); border-radius: 14px; padding: 16px; }
+      .grid { display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .muted { color: rgba(240,239,232,0.65); }
+      code { background: rgba(240,239,232,0.08); padding: 2px 6px; border-radius: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 style="margin:0 0 8px;">Nexo Sites — Preview Hub</h1>
+      <p class="muted" style="margin:0 0 18px;">Internal index (noindex). Previews live under <code>/p/&lt;slug&gt;/</code>.</p>
+
+      {slugs.length === 0 ? (
+        <div class="card">
+          <strong>No previews yet.</strong>
+          <div class="muted" style="margin-top:8px;">Publish one by copying a static build to <code>public/p/&lt;slug&gt;/</code>.</div>
+        </div>
+      ) : (
+        <div class="grid">
+          {slugs.map((s) => (
+            <div class="card">
+              <div style="font-weight:700; margin-bottom:6px;">{s}</div>
+              <div class="muted" style="font-size:14px;">/p/{s}/</div>
+              <div style="margin-top:10px;"><a href={`/p/${s}/`}>Open preview →</a></div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </body>
+</html>

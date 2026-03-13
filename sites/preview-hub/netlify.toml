@@ -1,0 +1,5 @@
+[build]
+  publish = "public"
+  command = ""
+  # Skip deploy if nothing changed inside this base directory.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
